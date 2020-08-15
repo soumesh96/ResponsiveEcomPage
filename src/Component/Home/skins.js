@@ -11,10 +11,10 @@ export const HeaderCon = styled.div`
   background: white;
   width: 100%;
   z-index: 1;
-  @media (max-width: 768px) {
-    position: fixed;
-    width: 100%;
-  }
+  // @media (max-width: 768px) {
+  position: fixed;
+  width: 100%;
+  // }
 `;
 
 export const LeftMenuWrapper = styled.div`
@@ -117,10 +117,10 @@ export const LeftSectionWrapper = styled.div`
   width: 40%;
   padding: 14px;
   border-right: 4px solid #EFEFEF;
+  margin-top: 60px;
   @media (max-width: 768px) {
     width: auto;
     border: none;
-    margin-top: 60px;
   }
 `;
 
@@ -254,10 +254,12 @@ export const RightSectionWrapper = styled.div`
   padding: 40px 24px 12px;
   border-left: 4px solid #EFEFEF;
   min-height: 88vh;
+  margin-top: 60px;
   @media (max-width: 768px) {
     width: 100%;
     padding: 0;
     border: none;
+    margin-top: 0;
   }
 `;
 
@@ -289,13 +291,12 @@ export const RightSubHeadingWrapper = styled.div`
     align-items: flex-start;
     margin-left: 10px;
     margin-top: 8%;
-    height: 12vh;
+    height: 6vh;
+    justify-content: space-around;
+    margin-bottom: 4%;
   }
   @media (max-width: 768px) {
-    flex-direction: column-reverse;
-    align-items: flex-start;
-    margin-left: 10px;
-    margin-top: 14%;
+    margin-top: 10%;
     height: 8vh;
   }
 `;
@@ -398,6 +399,7 @@ export const DeliveryWrapper = styled.div`
   @media (max-width: 768px) {
     height: auto;
     padding-left: 10px;
+    margin: 12px 0;
   }
 `;
 
